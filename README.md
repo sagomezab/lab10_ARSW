@@ -1,6 +1,8 @@
 ### Escuela Colombiana de Ingeniería
 ### Arquitecturas de Software - ARSW
 
+### Desarrollado por: Daniel Santiago Gómez Zabala
+
 ## Escalamiento en Azure con Maquinas Virtuales, Sacale Sets y Service Plans
 
 ### Dependencias
@@ -18,25 +20,43 @@ Cuando un conjunto de usuarios consulta un enésimo número (superior a 1000000)
 
 1. Cree una Function App tal cual como se muestra en las  imagenes.
 
-![](images/part3/part3-function-config.png)
+    ![](images/part3/part3-function-config.png)
 
-![](images/part3/part3-function-configii.png)
+    ![](images/part3/part3-function-configii.png)
+
+    Se hizo la creación del Function App
+
+    ![](images/CreacionFunctionApp.png)
 
 2. Instale la extensión de **Azure Functions** para Visual Studio Code.
 
-![](images/part3/part3-install-extension.png)
+    ![](images/part3/part3-install-extension.png)
+
+    Dentro de Visual realizaos la instalación de la extensión y se visualiza dentro de la imagen del siguiente punto
 
 3. Despliegue la Function de Fibonacci a Azure usando Visual Studio Code. La primera vez que lo haga se le va a pedir autenticarse, siga las instrucciones.
 
-![](images/part3/part3-deploy-function-1.png)
+    ![](images/part3/part3-deploy-function-1.png)
 
-![](images/part3/part3-deploy-function-2.png)
+    ![](images/part3/part3-deploy-function-2.png)
+
+    Se realiza el despligue de la app a Azure
+
+    ![](images/DeployFunction.png)
 
 4. Dirijase al portal de Azure y pruebe la function.
 
-![](images/part3/part3-test-function.png)
+    ![](images/part3/part3-test-function.png)
+
+    Se realizaron las pruebas, dentro de la iamgen se muestra la entrada y la salida
+
+    ![](images/PruebaEntrada.png)
+
+    ![](images/PruebaSalida.png)
 
 5. Modifique la coleción de POSTMAN con NEWMAN de tal forma que pueda enviar 10 peticiones concurrentes. Verifique los resultados y presente un informe.
+
+
 
 6. Cree una nueva Function que resuleva el problema de Fibonacci pero esta vez utilice un enfoque recursivo con memoization. Pruebe la función varias veces, después no haga nada por al menos 5 minutos. Pruebe la función de nuevo con los valores anteriores. ¿Cuál es el comportamiento?.
 
